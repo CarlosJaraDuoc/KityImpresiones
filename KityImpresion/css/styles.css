@@ -1,0 +1,218 @@
+/* Estilos personalizados */
+    body {
+      background: linear-gradient(180deg, rgba(248, 222, 229, 0.7), rgba(255, 255, 255, 0.05)); /* Fondo con gradiente suave */
+      font-family: Inter, system-ui, sans-serif;
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #f8dee5, #fddde6, #f3c4d6); /* Variaciones de rosa pastel */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black; /* Inspirado en la tipografía del logo */
+      font-weight: 700;
+      font-size: 20px;
+      box-shadow: 0 6px 18px rgba(248, 222, 229, 0.5); /* Sombra rosa tenue */
+    }
+
+    .preview {
+      background: linear-gradient(135deg, rgba(248, 222, 229, 0.2), rgba(255, 255, 255, 0.06)); /* Fondo claro rosado */
+    }
+
+    .btn-mail {
+      background: linear-gradient(90deg, #f3c4d6, #f8dee5); /* Rosa suave */
+      color: black !important; /* Más suave que blanco */
+    }
+
+    .btn-wsp {
+      background: linear-gradient(90deg, #d7c4f3, #b6a4e0); /* Lavanda suave */
+      color: white !important;
+    }
+
+    .btn-inst {
+      background: linear-gradient(90deg, #f3c4d6, #d7c4f3); /* Rosa a lavanda */
+      color: white !important;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+    }
+
+    .container-custom {
+      max-width: 1200px;
+    }
+
+    .product-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .cart {
+      border-top: 2px solid #ddd;
+      padding-top: 10px;
+      margin-top: 20px;
+    }
+
+    .cart p {
+      font-weight: bold;
+    }
+
+    /* Botones con color personalizado */
+    .btn-primary {
+      background: linear-gradient(90deg, #f3c4d6, #f8dee5); /* Rosa suave */
+      color: black !important;
+    }
+
+    .btn-success {
+      background: linear-gradient(90deg, #f3c4d6, #d7c4f3); /* Rosa a lavanda */
+      color: white !important;
+    }
+
+    .btn-danger {
+      background: linear-gradient(90deg, #d7c4f3, #b6a4e0); /* Lavanda suave */
+      color: white !important;
+    }
+
+    /* Header */
+    .navbar {
+      background: linear-gradient(90deg, #f3c4d6, #f8dee5);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 24px;
+      color: black;
+    }
+
+    .navbar-nav .nav-link {
+      color: black !important;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #f8dee5;
+      text-decoration: none;
+    }
+
+    .product-card img {
+  width: 100%; 
+  max-height: 200px; 
+  object-fit: cover; 
+  border-radius: 5px; 
+  margin-bottom: 15px;
+}
+
+.product-card {
+  height: 400px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body {
+      background: linear-gradient(180deg, rgba(248, 222, 229, 0.3), rgba(255, 255, 255, 0.05)); /* Rosa pastel claro */
+      font-family: Inter, system-ui, sans-serif;
+    }
+
+    /* Header */
+    .navbar {
+      background: linear-gradient(90deg, #f3c4d6, #f8dee5);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 24px;
+      color: black;
+    }
+
+    .navbar-nav .nav-link {
+      color: black !important;
+      font-weight: 600;
+    }
+
+    .admin-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .admin-card h4 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #d7c4f3; /* Color llamativo para el texto */
+    }
+
+    .admin-card ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .admin-card ul li {
+      margin-bottom: 10px;
+    }
+
+    /* Menú Admin */
+    .btn-menu {
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .btn-gestion-inventario {
+      background: linear-gradient(90deg, #f3c4d6, #f8dee5); /* Rosa suave */
+      color: black !important;
+    }
+
+    .btn-gestion-promociones {
+      background: linear-gradient(90deg, #d7c4f3, #b6a4e0); /* Lavanda suave */
+      color: white !important;
+    }
+
+    .btn-informes-ventas {
+      background: linear-gradient(90deg, #f3c4d6, #d7c4f3); /* Rosa a lavanda */
+      color: white !important;
+    }
+
+    /* Fondo del texto de bienvenida */
+    .welcome-text {
+      background-color: #f7d1d1; /* Rosa claro */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      color: #333;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #f8dee5;
+      text-decoration: none;
+    }

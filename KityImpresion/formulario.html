@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>registroForm</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+   <!-- Encabezado -->
+   <header>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Kity Impresión</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Ver productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admin.html">Vista Admin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formulario.html">Registro</a>
+
+            
+          <!--CODIGO SIN USAR DE MOMENTO, NO TOCAR
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="estadisticas.html">Estadísticas</a>
+          </li>-->
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+    <div class="container">
+        <div class="titulo">
+          Registro
+        </div> 
+        <form class="row g-3 mt-3" id="registroForm">
+
+            <div class="col-6">
+                <label for="Nombreinput" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="Nombreinput" placeholder="Ingrese Nombre Completo">
+            </div>
+
+            <div class="col-6">
+                <label for="Rutinput" class="form-label">Rut</label>
+                <input type="text" class="form-control" id="Rutinput" placeholder="Ej: 12.345.122-7"> //Validacion con expresión regular para que el rut tenga punto y guion//
+            </div>
+
+            <div class="col-6">
+                <label for="emailinput" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailinput" placeholder="Ingrese Email">
+            </div>
+
+            <div class="col-6">
+                <label for="inputPass" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPass" placeholder="Ingrese Contraseña">
+            </div>
+
+            <div class="col-6">
+                <label for="inputAddress" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese dirección">
+            </div>
+
+            <div class="col-6">
+                <label for="Telefonoinput" class="form-label">Telefono</label>
+                <input type="tel" class="form-control" id="Telefonoinput" placeholder="Ingrese Telefono">             
+            </div>
+
+            <div class="col-6"> 
+                <label for="Regioninput" class="form-label">Región</label>
+                <select id="Regioninput" class="form-control" required>
+                <option value="">Seleccione una región</option>
+                <option value="Arica">Región de Arica y Parinacota</option>
+                <option value="Tarapacá">Región de Tarapacá</option>
+                <option value="Antofagasta">Región de Antofagasta</option>
+                <option value="Atacama">Región de Atacama</option>
+                <option value="Coquimbo">Región de Coquimbo</option>
+                <option value="Valparaiso">Región de Valparaíso</option>
+                <option value="Metropolitana">Región Metropolitana de Santiago</option>
+                <option value="Ohiggins">Región del Libertador Gral. Bernardo O'Higgins</option>
+                <option value="Maule">Región del Maule</option>
+                <option value="Nuble">Región de Ñuble</option>
+                <option value="Biobío">Región del Biobío</option>
+                <option value="Araucania">Región de La Araucanía</option>
+                <option value="Los Rios">Región de Los Ríos</option>
+                <option value="Los Lagos">Región de Los Lagos</option>
+                <option value="Aysén">Región de Aysén del Gral. Carlos Ibáñez del Campo</option>
+                <option value="Magallanes">Región de Magallanes y de la Antártica Chilena</option>
+                </select>
+            </div>
+
+            <div class="col-6">
+                <label for="Comunainput" class="form-label">Comuna</label>
+                <input type="text" class="form-control" id="Comunainput" placeholder="Ingrese Comuna">             
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <label for="checkTerms" class="form-check-label">Acepto los Terminos</label>
+                    <input type="checkbox" id="checkTerms" class="form-check-input" placeholder="Acepta">
+                </div>
+            </div>
+            
+            <div class="col-12">
+                <button type="submit" class="btn-rosita">
+                    Registrarse
+                </button>
+            </div>
+
+            <div id="mensaje" class="col-12 mt-3"></div>
+
+        </form>
+    </div>
+
+    <!-- Pie de página -->
+  <footer class="footer">
+    <p>&copy; 2025 Kity Impresión. Todos los derechos reservados. <br> <a href="mailto:kiity.vale1@gmail.com">Contacto</a></p>
+  </footer>
+
+<script src="validation.js"></script>
+</body>
+</html>
